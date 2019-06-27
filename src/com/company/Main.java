@@ -7,14 +7,15 @@ public class Main {
 
         String a = "Nail";
 
-        switch (a) {
-            case "Nail":
-                System.out.println(peopleName[0] + " Доброе утро ");
-            case "Roma":
-                System.out.println(peopleName[1] + " Доброго дня ");
-            case "Adilet":
-                System.out.println(peopleName[2] + " Доброго вечера ");
-
+        for (int i = 0; i < 1; i++) {
+            switch (a) {
+                case "Nail":
+                    System.out.println(peopleName[0] + " Доброе утро ");
+                case "Roma":
+                    System.out.println(peopleName[1] + " Доброго дня ");
+                case "Adilet":
+                    System.out.println(peopleName[2] + " Доброго вечера ");
+            }
 
         }
 

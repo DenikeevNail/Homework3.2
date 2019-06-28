@@ -1,26 +1,37 @@
 package com.company;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
         String peopleName[] = {"Nail", "Roma", "Adilet"};
+        peopleName = Arrays.copyOf(peopleName, peopleName.length + 1);
+        peopleName[3] = "Nazgulya";
+        for (int i = 0; i < peopleName.length; i++) {
 
-        String a = "Nail";
+            switch (i) {
+                case 0:
+                    System.out.println(peopleName[i] + " Доброе утро ");
+                    break;
+                case 1:
+                    System.out.println(peopleName[i] + " Доброго дня ");
+                    break;
+                case 2:
+                    System.out.println(peopleName[i] + " Доброго вечера ");
+                    break;
+                case 3:
+                    System.out.println(peopleName[i] + " Доброй ночи ");
+                    break;
 
-        for (int i = 0; i < 1; i++) {
-            switch (a) {
-                case "Nail":
-                    System.out.println(peopleName[0] + " Доброе утро ");
-                case "Roma":
-                    System.out.println(peopleName[1] + " Доброго дня ");
-                case "Adilet":
-                    System.out.println(peopleName[2] + " Доброго вечера ");
             }
 
         }
 
     }
-
 }
+
+
 
 
